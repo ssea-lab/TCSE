@@ -1,0 +1,31 @@
+# Example configuration for TCSE
+# data_root: /ssd_data/lqb/DICE-time/upload_github/data/mb1m
+# output_dir: ./runs/tcse_example
+# item_text_emb_path: /ssd_data/lqb/DICE-time/upload_github/data/mb1m/text_embedding_aligned.npy
+
+data_root: /ssd_data/lqb/DICE-time/upload_github/data/myket
+output_dir: ./runs/tcse_example
+item_text_emb_path: /ssd_data/lqb/DICE-time/upload_github/data/myket/item_text_embeddings.npy
+
+
+embedding_dim: 64
+neg_sample_rate: 4
+time_splits: 4
+use_temporal_prototypes: true
+temporal_weight_mode: linear
+temporal_weight_alpha: 0.8
+temporal_weight: 0.05
+int_weight: 0.1
+pop_weight: 0.1
+discrepancy_penalty: 0.01
+
+epochs: 50
+batch_size: 256
+lr: 0.001
+eval_interval: 5
+topk: [20, 50]
+monitor_metric: recall@20
+patience: 5
+
+use_gpu: true
+device: cuda:0
