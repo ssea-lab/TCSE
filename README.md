@@ -33,7 +33,6 @@ You can extend this tree with additional configs or notebooks as needed before p
 
 1. **Install dependencies**
    ```bash
-   python -m venv .venv && source .venv/bin/activate
    pip install -r requirements.txt
    ```
 2. **Prepare data**
