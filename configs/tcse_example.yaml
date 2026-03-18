@@ -1,11 +1,11 @@
 # Example configuration for TCSE
-# data_root: /ssd_data/lqb/DICE-time/upload_github/data/mb1m
+# data_root: data/mb1m
 # output_dir: ./runs/tcse_example
-# item_text_emb_path: /ssd_data/lqb/DICE-time/upload_github/data/mb1m/text_embedding_aligned.npy
+# item_text_emb_path: data/mb1m/item_text_embeddings.npy
 
-data_root: /ssd_data/lqb/DICE-time/upload_github/data/myket
+data_root: data/myket
 output_dir: ./runs/tcse_example
-item_text_emb_path: /ssd_data/lqb/DICE-time/upload_github/data/myket/item_text_embeddings.npy
+item_text_emb_path: data/myket/item_text_embeddings.npy
 
 
 embedding_dim: 64
